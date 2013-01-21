@@ -6,7 +6,6 @@ Group:		Emulators
 License:	LGPLv2+
 URL:		http://wiki.winehq.org/winetricks
 Source0:	http://www.kegel.com/wine/winetricks
-BuildRoot:	%{_tmppath}/%{name}-root
 BuildArch:	noarch
 Requires:	wine 
 Requires:	wine-gecko
@@ -40,7 +39,5 @@ Categories=X-MandrivaLinux-MoreApplications-Emulators
 EOF
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-
