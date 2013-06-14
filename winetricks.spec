@@ -1,15 +1,22 @@
 Summary:	Download and Install Windows Libraries on WINE 
 Name:		winetricks
 Version:	20130220
-Release:	1
+Release:	2
 Group:		Emulators
 License:	LGPLv2+
 URL:		http://wiki.winehq.org/winetricks
 Source0:	http://www.kegel.com/wine/winetricks
-BuildArch:	noarch
-Requires:	wine 
-Requires:	wine-gecko
-Requires:	cabextract
+%ifarch x86_64
+Requires:   wine64
+Requires:   wine64-gecko
+%else
+Requires:   wine 
+Requires:   wine-gecko
+%endif
+Requires:   cabextract
+
+# No debug, but not noarch to have different reqs in different archs
+%define debug_package %{nil}
 
 %description
 winetricks is a quick and dirty script to download and install various
