@@ -1,11 +1,11 @@
 Summary:	Download and Install Windows Libraries on WINE 
 Name:		winetricks
-Version:	20130220
-Release:	2
+Version:	20130707
+Release:	1
 Group:		Emulators
 License:	LGPLv2+
 URL:		http://wiki.winehq.org/winetricks
-Source0:	http://www.kegel.com/wine/winetricks
+Source0:	http://winetricks.org/winetricks
 %ifarch x86_64
 Requires:   wine64
 Requires:   wine64-gecko
