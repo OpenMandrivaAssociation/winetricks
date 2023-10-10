@@ -1,6 +1,6 @@
 Summary:	Download and Install Windows Libraries on WINE 
 Name:		winetricks
-Version:	20230212
+Version:	20230903
 Release:	1
 Group:		Emulators
 License:	LGPLv2+
