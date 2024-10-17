@@ -4,7 +4,7 @@ Version:	20240105
 Release:	1
 Group:		Emulators
 License:	LGPLv2+
-URL:		http://wiki.winehq.org/winetricks
+URL:		https://wiki.winehq.org/winetricks
 Source0:	http://winetricks.org/winetricks
 %ifarch x86_64
 Requires:   wine64
